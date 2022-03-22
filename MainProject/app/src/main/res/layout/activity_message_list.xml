@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:wxq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF" >
+
+    
+
+    <com.cshen.tiyu.widget.RefreshListView
+        android:id="@+id/listview_message"
+        android:layout_below="@id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:divider="#EFEFEF"
+        android:dividerHeight="10dp"
+        android:overScrollMode="never"
+        android:padding="3dp"
+        android:layout_marginTop="-10dp"
+        android:scrollbars="none" >
+    </com.cshen.tiyu.widget.RefreshListView>
+    <TextView  
+        android:id="@+id/tv_nodata"
+        android:visibility="gone"
+        android:text="暂无数据"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+    <com.cshen.tiyu.widget.TopViewLeft
+        android:id="@+id/tv_head"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        wxq:topname="竞彩资讯" />
+
+</RelativeLayout>

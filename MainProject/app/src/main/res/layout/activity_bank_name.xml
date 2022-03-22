@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wxq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cshen.tiyu.activity.mian4.personcenter.setting.binding.NameAuthActivity" >
+<com.cshen.tiyu.widget.TopViewLeft
+        android:id="@+id/tv_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        wxq:topname="提款银行卡" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:text="最快2小时到账"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="招商银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="工商银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="农业银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="建设银行" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:text="提款24小时内到账"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="中信银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="交通银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="中国银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="中国民生银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="光大银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="上海浦东发展银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="中国邮政储蓄银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="兴业银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="华夏银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="广发银行" />
+
+            <TextView
+                style="@style/bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="其他银行" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

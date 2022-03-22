@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="26dp"
+    android:background="#F8F8F8"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E4E4E4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:background="#E4E4E4" />
+
+        <TextView
+            android:id="@+id/qici"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="期次" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num01"
+                style="@style/qici115_number_red_no"
+                android:text="01" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num02"
+                style="@style/qici115_number_red_no"
+                android:text="02" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num03"
+                style="@style/qici115_number_red_no"
+                android:text="03" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num04"
+                style="@style/qici115_number_red_no"
+                android:text="04" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num05"
+                style="@style/qici115_number_red_no"
+                android:text="05" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num06"
+                style="@style/qici115_number_red_no"
+                android:text="06" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num07"
+                style="@style/qici115_number_red_no"
+                android:text="07" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num08"
+                style="@style/qici115_number_red_no"
+                android:text="08" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num09"
+                style="@style/qici115_number_red_no"
+                android:text="09" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num10"
+                style="@style/qici115_number_red_no"
+                android:text="10" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            style="@style/dlt_number_back">
+
+            <TextView
+                android:id="@+id/num11"
+                style="@style/qici115_number_red_no"
+                android:text="11" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:background="#E4E4E4" />
+    </LinearLayout>
+
+</LinearLayout>

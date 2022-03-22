@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_item_submittime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="00-00-00 00:00:00 提交"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_item_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_delete1" />
+
+        <TextView
+            android:id="@+id/tv_item_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_item_delete"
+            android:text="等待审核" />
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/tv_expand_or_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainred"
+            android:textSize="14sp"
+            android:text="全文"/>
+    </LinearLayout>
+
+     
+      <ImageView
+        android:id="@+id/gv_photo"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/ic_addpic" />
+    
+    <TextView 
+        android:id="@+id/tv_reason"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

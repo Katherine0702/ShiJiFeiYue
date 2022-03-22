@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="选3个不同号码，与开奖相同即中40元"
+        android:textColor="#9fbe53"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/fasttitleback"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="胆码"
+        android:textColor="#e5ffc5"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dlt_title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/view1"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/num1"
+                    style="@style/fast_number_lg"
+                    android:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/num1_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="遗漏：1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/view2"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/num2"
+                    style="@style/fast_number_lg"
+                    android:text="2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/num2_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/view3"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/num3"
+                    style="@style/fast_number_lg"
+                    android:text="3" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/num3_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/view4"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/num4"
+                    style="@style/fast_number_lg"
+                    android:text="4" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/num4_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/view5"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/num5"
+                    style="@style/fast_number_lg"
+                    android:text="5" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/num5_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/view6"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/num6"
+                    style="@style/fast_number_lg"
+                    android:text="6" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/num6_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/fasttitleback"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="拖码"
+        android:textColor="#e5ffc5"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dlt_title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tuoview1"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/tuonum1"
+                    style="@style/fast_number_lg"
+                    android:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tuonum1_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="遗漏：1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tuoview2"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/tuonum2"
+                    style="@style/fast_number_lg"
+                    android:text="2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tuonum2_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tuoview3"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/tuonum3"
+                    style="@style/fast_number_lg"
+                    android:text="3" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tuonum3_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tuoview4"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/tuonum4"
+                    style="@style/fast_number_lg"
+                    android:text="4" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tuonum4_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tuoview5"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/tuonum5"
+                    style="@style/fast_number_lg"
+                    android:text="5" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tuonum5_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tuoview6"
+                style="@style/fast_number" >
+
+                <TextView
+                    android:id="@+id/tuonum6"
+                    style="@style/fast_number_lg"
+                    android:text="6" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tuonum6_notice"
+                style="@style/fast3mianhezhi_itemchild3"
+                android:layout_marginTop="5dp"
+                android:text="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <declare-styleable name="topview">
+             <attr name="topname" format="string" />
+    </declare-styleable>
+    
+    
+    
+    <declare-styleable name="PersonalItemView">
+        
+        <attr name="pname" format="string" />
+        <attr name="pvalue" format="string" />
+        <attr name="src" format="reference"/>
+     
+        
+    </declare-styleable>
+    
+    
+   
+    
+    
+    <declare-styleable name="safesettingview">
+        <attr name="name" format="string" />
+        <attr name="name2" format="string" />
+        <attr name="value" format="string" />
+       
+    </declare-styleable>
+    
+    
+    
+     <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+    
+    <attr name="item_count" format="integer"></attr>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+    </declare-styleable>
+    
+    
+    
+    
+    
+     <!-- PagerSlidingTabStripc菜单 -->
+     
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedTabTextColor" format="color" />
+    </declare-styleable>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <declare-styleable name="SettingIteamView">
+        <attr name="text" format="string" />
+        <attr name="android:src"/>
+    </declare-styleable>
+ 
+    
+    
+    <declare-styleable name="SettingIteamViewTwo">
+    	 <attr name="textwo" format="string" />
+        <attr name="android:src"/>
+    	
+    </declare-styleable> 
+    
+    
+    <declare-styleable name="periodsJczqItem">
+     <attr name="periodName" format="string" />
+     <attr name="periodNumber" format="string" />
+    </declare-styleable>
+    
+    
+    
+    <!-- 矩形圆角/圆形图片 -->
+    <declare-styleable name="ShapedImageView">
+        <attr name="shape_mode" format="enum">
+            <enum name="round_rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+        <attr name="round_radius" format="dimension" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="stroke_color" format="color|reference" />
+    </declare-styleable>
+    
+   
+   
+    
+</resources>

@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mainred"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:id="@+id/tv_head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="排列5"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:src="@mipmap/shuoming" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_bootom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/dlt_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/clear" />
+
+        <TextView
+            android:id="@+id/dlt_clear_line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/dlt_clear"
+            android:layout_alignTop="@id/dlt_clear"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/dlt_clear"
+            android:background="#E1E1E1" />
+
+        <TextView
+            android:id="@+id/dlt_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dlt_clear_line"
+            android:gravity="center"
+            android:text="0注0元"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/dlt_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/dlt_sure"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="确 定"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/tv_bootom"
+        android:background="#EBEBEB" />
+
+    <TextView
+        android:id="@+id/prizemoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/line"
+        android:background="#FFFFFF"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:text="若中奖，奖金540元，盈利538元"
+        android:textColor="#ff0009"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/prizemoney"
+        android:background="#EBEBEB" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line2"
+        android:layout_below="@id/tv_head"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/dlt_zhanwei_wuyong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/dlt_zhanwei_wuyong2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:background="#E7E7E7"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D9DADC"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:text="奖池滚存：*****"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:orientation="vertical" >
+
+                        <include layout="@layout/qishu_item" />
+
+                        <include layout="@layout/qishu_item" />
+
+                        <include layout="@layout/qishu_item" />
+
+                        <include layout="@layout/qishu_item" />
+
+                        <include layout="@layout/qishu_item" />
+
+                        <include layout="@layout/qishu_item" />
+
+                        <include layout="@layout/qishu_item" />
+
+                        <include layout="@layout/qishu_item" />
+
+                        <include layout="@layout/qishu_item" />
+
+                        <include layout="@layout/qishu_item" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dlt_qishu_view"
+                    android:orientation="vertical"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#efeff0"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:text="第2016072期   06-22  19:20截止，20:30开奖"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dlt_down_view"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="下拉"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/dlt_down" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dlt_down_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/dlt_down_view"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp" >
+
+                <TextView
+                    android:id="@+id/dlt_down_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下拉"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/dlt_down_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/dlt_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dlt_zhanwei_wuyong"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/dlt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="每位至少选择1个号码"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/dlt_shake"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/yyyback"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/dlt_shake" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="机选"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wanweiview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dlt_title"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="万位"
+                        android:textColor="#666666"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview0"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum0"
+                                    style="@style/dlt_number_red"
+                                    android:text="0" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview1"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum1"
+                                    style="@style/dlt_number_red"
+                                    android:text="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview2"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum2"
+                                    style="@style/dlt_number_red"
+                                    android:text="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview3"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum3"
+                                    style="@style/dlt_number_red"
+                                    android:text="3" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview4"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum4"
+                                    style="@style/dlt_number_red"
+                                    android:text="4" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview5"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum5"
+                                    style="@style/dlt_number_red"
+                                    android:text="5" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview6"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum6"
+                                    style="@style/dlt_number_red"
+                                    android:text="6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview7"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum7"
+                                    style="@style/dlt_number_red"
+                                    android:text="7" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview8"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum8"
+                                    style="@style/dlt_number_red"
+                                    android:text="8" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/wanweiview9"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/wanweinum9"
+                                    style="@style/dlt_number_red"
+                                    android:text="9" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/linexu" />
+
+                <LinearLayout
+                    android:id="@+id/qianweiview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dlt_title"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="千位"
+                        android:textColor="#666666"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/wanweiview"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview0"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum1"
+                                    style="@style/dlt_number_red"
+                                    android:text="0" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview1"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum0"
+                                    style="@style/dlt_number_red"
+                                    android:text="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview2"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum2"
+                                    style="@style/dlt_number_red"
+                                    android:text="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview3"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum3"
+                                    style="@style/dlt_number_red"
+                                    android:text="3" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview4"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum4"
+                                    style="@style/dlt_number_red"
+                                    android:text="4" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview5"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum5"
+                                    style="@style/dlt_number_red"
+                                    android:text="5" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview6"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum6"
+                                    style="@style/dlt_number_red"
+                                    android:text="6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview7"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum7"
+                                    style="@style/dlt_number_red"
+                                    android:text="7" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview8"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum8"
+                                    style="@style/dlt_number_red"
+                                    android:text="8" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qianweiview9"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/qianweinum9"
+                                    style="@style/dlt_number_red"
+                                    android:text="9" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/linexu" />
+
+                <LinearLayout
+                    android:id="@+id/baiweiview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qianweiview"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="百位"
+                        android:textColor="#666666"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/red"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview0"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum0"
+                                    style="@style/dlt_number_red"
+                                    android:text="0" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview1"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum1"
+                                    style="@style/dlt_number_red"
+                                    android:text="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview2"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum2"
+                                    style="@style/dlt_number_red"
+                                    android:text="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview3"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum3"
+                                    style="@style/dlt_number_red"
+                                    android:text="3" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview4"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum4"
+                                    style="@style/dlt_number_red"
+                                    android:text="4" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview5"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum5"
+                                    style="@style/dlt_number_red"
+                                    android:text="5" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview6"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum6"
+                                    style="@style/dlt_number_red"
+                                    android:text="6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview7"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum7"
+                                    style="@style/dlt_number_red"
+                                    android:text="7" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview8"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum8"
+                                    style="@style/dlt_number_red"
+                                    android:text="8" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/baiweiview9"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/baiweinum9"
+                                    style="@style/dlt_number_red"
+                                    android:text="9" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/linexu" />
+
+                <LinearLayout
+                    android:id="@+id/shiweiview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qianweiview"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="十位"
+                        android:textColor="#666666"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/red"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview0"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum0"
+                                    style="@style/dlt_number_red"
+                                    android:text="0" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview1"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum1"
+                                    style="@style/dlt_number_red"
+                                    android:text="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview2"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum2"
+                                    style="@style/dlt_number_red"
+                                    android:text="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview3"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum3"
+                                    style="@style/dlt_number_red"
+                                    android:text="3" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview4"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum4"
+                                    style="@style/dlt_number_red"
+                                    android:text="4" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview5"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum5"
+                                    style="@style/dlt_number_red"
+                                    android:text="5" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview6"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum6"
+                                    style="@style/dlt_number_red"
+                                    android:text="6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview7"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum7"
+                                    style="@style/dlt_number_red"
+                                    android:text="7" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview8"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum8"
+                                    style="@style/dlt_number_red"
+                                    android:text="8" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shiweiview9"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/shiweinum9"
+                                    style="@style/dlt_number_red"
+                                    android:text="9" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/linexu" />
+
+                <LinearLayout
+                    android:id="@+id/geweiview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qianweiview"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="个位"
+                        android:textColor="#666666"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/red"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/geweiview0"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum0"
+                                    style="@style/dlt_number_red"
+                                    android:text="0" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/geweiview1"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum1"
+                                    style="@style/dlt_number_red"
+                                    android:text="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/geweiview2"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum2"
+                                    style="@style/dlt_number_red"
+                                    android:text="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/geweiview3"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum3"
+                                    style="@style/dlt_number_red"
+                                    android:text="3" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/geweiview4"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum4"
+                                    style="@style/dlt_number_red"
+                                    android:text="4" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/geweiview5"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum5"
+                                    style="@style/dlt_number_red"
+                                    android:text="5" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/geweiview6"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum6"
+                                    style="@style/dlt_number_red"
+                                    android:text="6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/geweiview7"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum7"
+                                    style="@style/dlt_number_red"
+                                    android:text="7" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/geweiview8"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum8"
+                                    style="@style/dlt_number_red"
+                                    android:text="8" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/geweiview9"
+                                style="@style/dlt_number_back" >
+
+                                <TextView
+                                    android:id="@+id/geweinum9"
+                                    style="@style/dlt_number_red"
+                                    android:text="9" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/shake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/dltnumchoose0view"
+            style="@style/choose115_number_back"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dltnumchoose0"
+                style="@style/dlt_number_blue"
+                android:background="@drawable/dlt_number_back_red"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dltnumchoose1view"
+            style="@style/choose115_number_back"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dltnumchoose1"
+                style="@style/dlt_number_blue"
+                android:background="@drawable/dlt_number_back_red"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dltnumchoose2view"
+            style="@style/choose115_number_back"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dltnumchoose2"
+                style="@style/dlt_number_blue"
+                android:background="@drawable/dlt_number_back_red"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dltnumchoose3view"
+            style="@style/choose115_number_back"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dltnumchoose3"
+                style="@style/dlt_number_blue"
+                android:background="@drawable/dlt_number_back_red"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dltnumchoose4view"
+            style="@style/choose115_number_back"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dltnumchoose4"
+                style="@style/dlt_number_blue"
+                android:background="@drawable/dlt_number_back_red"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.cshen.tiyu.widget.CurtainView
+        android:id="@+id/dlt_show_downview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_head" />
+
+</RelativeLayout>

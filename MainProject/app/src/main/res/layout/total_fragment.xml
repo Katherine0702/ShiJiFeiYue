@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.cshen.tiyu.widget.RefreshListView
+        android:id="@+id/rl_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:cacheColorHint="@null"
+        android:divider="#EFEFEF"
+        android:dividerHeight="1dip"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <com.cshen.tiyu.widget.RefreshListView
+        android:id="@+id/rl_listview2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:cacheColorHint="@null"
+        android:divider="#EFEFEF"
+        android:dividerHeight="0dip"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/nodataview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/mainback"
+        android:gravity="center"
+        android:orientation="vertical"  >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="您暂无订单"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:src="@mipmap/nodataim" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="来注大乐透，3元可中1600万"
+            android:textColor="@color/mainred"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/touzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cornerfullred"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="5dp"
+            android:text="立即投注"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

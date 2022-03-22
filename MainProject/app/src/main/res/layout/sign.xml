@@ -1,0 +1,452 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/signback"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.cshen.tiyu.widget.TopViewLeft
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:topname="签到" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="210dp"
+                android:background="@mipmap/signback1" >
+
+                <ImageView
+                    android:id="@+id/signim"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="140dp"
+                    android:src="@mipmap/sign" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/zhong1"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@mipmap/signuned" />
+
+                <TextView
+                    android:id="@+id/zhong2line"
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <ImageView
+                    android:id="@+id/zhong2"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@mipmap/signuned" />
+
+                <TextView
+                    android:id="@+id/zhong3line"
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <ImageView
+                    android:id="@+id/zhong3"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@mipmap/signuned" />
+
+                <TextView
+                    android:id="@+id/zhong4line"
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <ImageView
+                    android:id="@+id/zhong4"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@mipmap/signuned" />
+
+                <TextView
+                    android:id="@+id/zhong5line"
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <ImageView
+                    android:id="@+id/zhong5"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@mipmap/signuned" />
+
+                <TextView
+                    android:id="@+id/zhong6line"
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <ImageView
+                    android:id="@+id/zhong6"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@mipmap/signuned" />
+
+                <TextView
+                    android:id="@+id/zhong7line"
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <ImageView
+                    android:id="@+id/zhong7"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@mipmap/signuned" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signweektext"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/zhong1txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期一"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp" />
+
+                <TextView
+                    android:id="@+id/zhong2txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期二"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp" />
+
+                <TextView
+                    android:id="@+id/zhong3txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期三"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp" />
+
+                <TextView
+                    android:id="@+id/zhong4txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期四"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp" />
+
+                <TextView
+                    android:id="@+id/zhong5txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期五"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp" />
+
+                <TextView
+                    android:id="@+id/zhong6txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期六"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp" />
+
+                <TextView
+                    android:id="@+id/zhong7txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期日"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/signweek"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/signprize" />
+
+            <LinearLayout
+                android:id="@+id/prize"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/sign1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:background="@mipmap/redpacket11" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="3dp"
+                            android:text="1元"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:background="@mipmap/redpacket12"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计签到1天"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="满10元减1元"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/caozuo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未领取"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sign2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:background="@mipmap/redpacket21" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="3dp"
+                            android:text="2元"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:background="@mipmap/redpacket22"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计签到3天"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="满20元减2元"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/caozuo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未领取"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sign3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:background="@mipmap/redpacket31" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="3dp"
+                            android:text="5元"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:background="@mipmap/redpacket32"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计签到7天"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="满50元减5元"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/caozuo5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未领取"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/signprize" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1、本平台网站用户在网站进行签到，签到周期为7天"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2、一周签到次数为1次、3次、7次将分别得到一个不同金额的红包"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3、本周签到1次可得到一个满10减1红包，签到3次可得到一个满20减2的红包，签到7次可得到一个满50减5的红包"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="4、所有红包自发放后，7天有效"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="5、本活动最终解释权由本平台所有，有疑问联系客服"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

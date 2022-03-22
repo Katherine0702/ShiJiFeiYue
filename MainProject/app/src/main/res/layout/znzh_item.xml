@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/qishu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="42"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/minustime"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/minus" />
+
+            <EditText
+                android:id="@+id/beishu"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/editback"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="999"
+                android:textColor="#BE9A6B"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/addtime"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/add" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/touru"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="5467"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/yingli"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="567"
+            android:textSize="12sp"
+            android:textColor="@color/mainred" />
+
+        <TextView
+            android:id="@+id/yinglilv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="58400.00%"
+            android:textSize="12sp"
+            android:textColor="@color/mainred" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+</LinearLayout>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/renzhengniuren"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@mipmap/renzhengniuren" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="认证牛人"
+                android:textColor="#666666"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="-49dp"
+            android:layout_marginRight="-49dp"
+            android:background="@drawable/linexushu" />
+
+        <LinearLayout
+            android:id="@+id/wodeleitai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@mipmap/wodeleitai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="我的擂台"
+                android:textColor="#666666"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/niurenlisttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F9F9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gendanicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="竞彩牛人"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/niurenlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/person1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/head1_im_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/defaultpic_yuan"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/head1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/head1_im_back"
+                android:layout_alignLeft="@id/head1_im_back"
+                android:layout_alignRight="@id/head1_im_back"
+                android:layout_alignTop="@id/head1_im_back"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultniu" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultpic_yuan" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="竞彩牛人"
+                android:textColor="#454545"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/name1_notice"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/redball"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/head2_im_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/defaultpic_yuan"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/head2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/head2_im_back"
+                android:layout_alignLeft="@id/head2_im_back"
+                android:layout_alignRight="@id/head2_im_back"
+                android:layout_alignTop="@id/head2_im_back"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultniu" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultpic_yuan" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="竞彩牛人"
+                android:textColor="#454545"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/name2_notice"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/redball"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/head3_im_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/defaultpic_yuan"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/head3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/head3_im_back"
+                android:layout_alignLeft="@id/head3_im_back"
+                android:layout_alignRight="@id/head3_im_back"
+                android:layout_alignTop="@id/head3_im_back"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultniu" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultpic_yuan" />
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="竞彩牛人"
+                android:textColor="#454545"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/name3_notice"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/redball"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/head4_im_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/defaultpic_yuan"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/head4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/head4_im_back"
+                android:layout_alignLeft="@id/head4_im_back"
+                android:layout_alignRight="@id/head4_im_back"
+                android:layout_alignTop="@id/head4_im_back"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultniu" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultpic_yuan" />
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="竞彩牛人"
+                android:textColor="#454545"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/name4_notice"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/redball"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/head5_im_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/defaultpic_yuan"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/head5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/head5_im_back"
+                android:layout_alignLeft="@id/head5_im_back"
+                android:layout_alignRight="@id/head5_im_back"
+                android:layout_alignTop="@id/head5_im_back"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultniu" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/defaultpic_yuan" />
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="竞彩牛人"
+                android:textColor="#454545"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/name5_notice"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/redball"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#F9F9F9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gendanicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="牛人推荐"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

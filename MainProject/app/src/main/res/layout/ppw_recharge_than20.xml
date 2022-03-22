@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@mipmap/bg_ppw_recharge1" />
+
+        <Button
+             android:id="@+id/btn_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ppw_close" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btn_view"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/shape_ppw_redbutton"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="立即查看"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_use"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_ppw_yellowbutton"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="立即使用"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--
+     <RelativeLayout
+         android:background="@mipmap/bg_five_league"
+         android:layout_width="match_parent"
+         android:layout_margin="15dp"
+         android:layout_height="350dp">
+          <Button
+              android:id="@+id/btn_close"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="35dp"
+              android:layout_marginTop="45dp"
+              android:background="@mipmap/btn_delete"/>
+          <Button
+              android:id="@+id/btn_ppw_register"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginLeft="38dp"
+              android:layout_marginRight="38dp"
+              android:layout_marginBottom="35dp"
+              android:layout_alignParentBottom="true"
+              android:background="@mipmap/btn_usenow"/>
+     </RelativeLayout>
+    -->
+
+</LinearLayout>

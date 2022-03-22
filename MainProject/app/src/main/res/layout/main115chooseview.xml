@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        style="@style/textstyle1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="普通投注" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/rx2"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx2_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cornerfullred"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="任选二"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rx3"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx3_tv"
+                style="@style/tz_115_back"
+                android:text="任选三" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rx4"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx4_tv"
+                style="@style/tz_115_back"
+                android:text="任选四" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/rx5"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx5_tv"
+                style="@style/tz_115_back"
+                android:text="任选五" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rx6"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx6_tv"
+                style="@style/tz_115_back"
+                android:text="任选六" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rx7"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx7_tv"
+                style="@style/tz_115_back"
+                android:text="任选七" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/rx8"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx8_tv"
+                style="@style/tz_115_back"
+                android:text="任选八" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rx1"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx1_tv"
+                style="@style/tz_115_back"
+                android:text="前一直选" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q2zx"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/q2zx_tv"
+                style="@style/tz_115_back"
+                android:text="前二直选" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/q2zux"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/q2zux_tv"
+                style="@style/tz_115_back"
+                android:text="前二组选" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q3zx"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/q3zx_tv"
+                style="@style/tz_115_back"
+                android:text="前三直选" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q3zux"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/q3zux_tv"
+                style="@style/tz_115_back"
+                android:text="前三组选" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/textstyle1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:text="胆拖投注" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/rx2dt"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx2dt_tv"
+                style="@style/tz_115_back"
+                android:text="任选二胆拖" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rx3dt"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx3dt_tv"
+                style="@style/tz_115_back"
+                android:text="任选三胆拖" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rx4dt"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx4dt_tv"
+                style="@style/tz_115_back"
+                android:text="任选四胆拖" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/rx5dt"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx5dt_tv"
+                style="@style/tz_115_back"
+                android:text="任选五胆拖" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rx6dt"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx6dt_tv"
+                style="@style/tz_115_back"
+                android:text="任选六胆拖" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rx7dt"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/rx7dt_tv"
+                style="@style/tz_115_back"
+                android:text="任选七胆拖" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/q2zuxdt"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/q2zuxdt_tv"
+                style="@style/tz_115_back"
+                android:text="前二组选胆拖" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q3zuxdt"
+            style="@style/tz_115_view_back" >
+
+            <TextView
+                android:id="@+id/q3zuxdt_tv"
+                style="@style/tz_115_back"
+                android:text="前三组选胆拖" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/tz_115_view_back"
+            android:visibility="invisible" >
+
+            <TextView
+                style="@style/tz_115_back"
+                android:text="前三组选胆拖" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

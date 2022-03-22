@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6">
+
+    <com.cshen.tiyu.widget.VerticalSwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- 轮播图 -->
+
+                <com.cshen.tiyu.widget.ImageCycleView
+                    android:id="@+id/ad_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp" />
+                <!-- 消息通知 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_news"
+                    android:layout_width="fill_parent"
+                    android:layout_height="28dp"
+                    android:background="#ffffff"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_news"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/news_icon" />
+
+                    <com.cshen.tiyu.widget.LooperTextView
+                        android:id="@+id/looperview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_news"
+                        android:textSize="12dp"
+                        android:paddingTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/looperview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_news"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/dingdanalluncolor"
+                        android:textSize="12dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#F6F6F6" />
+                <!-- 首页足球赛事    大乐透投注 -->
+
+
+                <com.cshen.tiyu.widget.FootballLinearLayout
+                    android:id="@+id/football"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/ad_viewview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/mainback"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                    <!-- 热门彩种列表 -->
+                    <com.cshen.tiyu.widget.ImageCycleView
+                        android:id="@+id/ad_view2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <com.cshen.tiyu.widget.LotteryTypeView
+                    android:id="@+id/lt_lotterytype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white">
+
+                </com.cshen.tiyu.widget.LotteryTypeView>
+
+
+                <com.cshen.tiyu.widget.PlayingMethodView
+                    android:id="@+id/pm_playingmethod"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:padding="10dp" />
+
+                <include
+                    android:id="@+id/view_news"
+                    layout="@layout/include_home_news" />
+            </LinearLayout>
+        </ScrollView>
+    </com.cshen.tiyu.widget.VerticalSwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- 轮播图 -->
+
+            <com.cshen.tiyu.widget.ImageCycleView
+                android:id="@+id/ad_view"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp" />
+
+            <com.cshen.tiyu.widget.PlayingMethodView
+                android:id="@+id/pm_playingmethod"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff" />
+            <!-- 热门彩种 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/mainback" />
+
+
+            <com.cshen.tiyu.widget.LotteryTypeView
+                android:id="@+id/lt_lotterytype"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#D9D9D9" />
+
+            <com.cshen.tiyu.widget.MyListView
+                android:id="@+id/lv_home_news"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

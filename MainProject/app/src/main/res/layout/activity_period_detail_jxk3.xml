@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainback"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/topleft" />
+
+    <LinearLayout
+        android:id="@+id/linearyLayout_LatestLotteryInfoFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_LatestLotteryInfoFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_lotteryName_LatestLotteryInfoFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="江西快3"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textview_periodNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:text="第09期"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textview_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="2dp"
+                    android:text="2016-08-25"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_result_jxk301"
+                    style="@style/orderdetail_number_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_result_jxk302"
+                    style="@style/orderdetail_number_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="01"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_result_jxk303"
+                    style="@style/orderdetail_number_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="01"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="奖项" />
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:layout_marginLeft="1dp"
+                        android:text="投注奖金（元）" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="和值"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:layout_marginLeft="1dp"
+                        android:text="9-24"
+                        android:textColor="@color/mainred" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="三同号通选"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:layout_marginLeft="1dp"
+                        android:text="40"
+                        android:textColor="@color/mainred" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="三同号单选"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:layout_marginLeft="1dp"
+                        android:text="240"
+                        android:textColor="@color/mainred" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="三不同号"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:layout_marginLeft="1dp"
+                        android:text="40"
+                        android:textColor="@color/mainred" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="三连号通选"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:layout_marginLeft="1dp"
+                        android:text="10"
+                        android:textColor="@color/mainred" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="二同号复选"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:layout_marginLeft="1dp"
+                        android:text="15"
+                        android:textColor="@color/mainred" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="二同号单选"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:layout_marginLeft="1dp"
+                        android:text="80"
+                        android:textColor="@color/mainred" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="二不同号"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:layout_marginLeft="1dp"
+                        android:text="8"
+                        android:textColor="@color/mainred" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btn_go"
+        style="@style/redButton_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="去中奖"
+        android:textSize="16sp" />
+
+</LinearLayout>

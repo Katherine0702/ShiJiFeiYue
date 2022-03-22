@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/tv_tab_hot"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="热门跟单"
+            android:textColor="@color/mainred"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/tv_tab_renqi"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="人气榜"
+            android:textColor="@color/dingdanuncolor"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/tv_tab_mingzhong"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="命中榜"
+            android:textColor="@color/dingdanuncolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_tab_yingli"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="盈利榜"
+            android:textColor="@color/dingdanuncolor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/iv_bootom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_gravity="bottom"
+        android:background="#ECECEC"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/iv_bottom_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/mainred" />
+
+        <ImageView
+            android:id="@+id/iv_bottom_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_weight="1"
+            android:scaleType="matrix"
+            android:src="@color/mainred"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_bottom_line3"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_weight="1"
+            android:scaleType="matrix"
+            android:src="@color/mainred"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_bottom_line4"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_weight="1"
+            android:scaleType="matrix"
+            android:src="@color/mainred"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

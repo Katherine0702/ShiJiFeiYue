@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cshen.tiyu"
+    android:versionCode="1"
+    android:versionName="1.0 " >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="cn.swiftpass.spay.permission.MMOAUTH_CALLBACK" />
+    <uses-permission android:name="cn.swiftpass.spay.permission.MM_MESSAGE" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="xvtian.gai.receiver" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.cshen.tiyu.base.CaiPiaoApplication"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cshen.tiyu.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.GuideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 大乐透 -->
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.dlt.DLTMainActivity"
+            android:label="@string/dltmain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.dlt.DLTAccountListActivity"
+            android:label="@string/dltlist"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.dlt.DLTOrderDetailActivity"
+            android:label="@string/DLTOrderDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.dlt.DLTPeriodDetailActivity"
+            android:label="@string/DLTPeriodsDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.dlt.DLTPeriodsActivity"
+            android:label="@string/DLTPeriods"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 快三 -->
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.Fast3.Fast3MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.Fast3.Fast3AccountListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.Fast3.Fast3OrderDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.Fast3.JXK3PeriodDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.Fast3.JXK3PeriodsRefreshActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 排三排五 -->
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.pl35.Pl5MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.pl35.Pl5AccountActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 胜负彩任选九 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.sfc.SFCMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.sfc.SFCAccountListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.sfc.SFCOrderDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 11选5 -->
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.cai115.Main115Activity"
+            android:label="@string/main115"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.cai115.Account115ListActivity"
+            android:label="@string/account115"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.cai115.MainGd115Activity"
+            android:label="@string/maingd115"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.cai115.Accountgd115ListActivity"
+            android:label="@string/accountgd115"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.cai115.ZNZHMainActivity"
+            android:label="@string/accountgd115"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.cai115.EL11TO5OrderDetailActivity"
+            android:label="@string/SDEL11TO5OrderDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.cai115.SDEL11to5PeriodsActivity"
+            android:label="@string/SDEL11to5Periods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.cai115.SDEL11to5PeriodDetailActivity"
+            android:label="@string/SDEL11to5PeriodsDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 双色球 -->
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ssq.SSQMainActivity"
+            android:label="@string/dltmain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ssq.SSQAccountListActivity"
+            android:label="@string/dltlist"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ssq.SSQOrderDetailActivity"
+            android:label="@string/SSQPeriods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ssq.SSQPeriodsActivity"
+            android:label="@string/SSQPeriods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ssq.SSQPeriodDetailActivity"
+            android:label="@string/SSQPeriodsDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 足球 -->
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.FootballMainActivity"
+            android:label="@string/footballmain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.FootballAccountListActivity"
+            android:label="@string/footballlist"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.FootballBFDetailActivity"
+            android:label="@string/footballdetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.FootballDetailActivity"
+            android:label="@string/footballdetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.FootballJQSDetailActivity"
+            android:label="@string/footballdetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.JCZQOrderDetailActivity"
+            android:label="@string/JCZQOrderDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.JJYHMainActivity"
+            android:label="@string/footballlist"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.JCZQPeriodsActivity"
+            android:label="@string/JCZQPeriods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.JCZQPeriodsRefreshActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.football.FootballBFZBListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 篮球 -->
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.basketball.BasketBallAccountListActivity"
+            android:label="@string/basketballaccount"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.basketball.BasketBallMainActivity"
+            android:label="@string/basketballmain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.basketball.BasketBallDetailActivity"
+            android:label="@string/basketballdetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.basketball.BasketBallBFZBListActivity"
+            android:label="@string/footballlist"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.basketball.JCLQOrderDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.basketball.JCLQOrderTicketDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.basketball.JCLQPeriodsRefreshActivity"
+            android:label="@string/DLTPeriods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.lottery.ball.basketball.JJYHJCLQMainActivity"
+            android:label="@string/footballlist"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 跟单 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.gendan.niuren.NiuRenSearchactivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.gendan.niuren.NiuRenListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.gendan.niuren.NiuRenActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.gendan.FollowDetilActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.gendan.myarena.MyArenaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.gendan.myarena.MyRecommendDetilActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 发现 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.find.LatestLotteryInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.find.LiveScoresActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.find.shareorder.ShareOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.find.shareorder.AddShareOrderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.find.shareorder.MyShareOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.find.message.MessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.find.shareorder.ImagePagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心账户 订单明细 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.main.SignActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.account.AccountDetailActivity"
+            android:label="@string/title_activity_account_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.orders.OrdersActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.DrawingsActivity"
+            android:label="@string/title_activity_drawings"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 个人中心红包 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.redpacket.RedPacketActivity"
+            android:label="@string/title_activity_red_packet"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.redpacket.RedPacketShuomingActivity"
+            android:label="@string/title_activity_red_packet_shuoming"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 个人中心追号 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.zhuihao.ZhuiHaoMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.zhuihao.AddOrderDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 个人中心绑定信息 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.binding.BindingPhoneActivity"
+            android:label="@string/title_activity_binding_phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.binding.NameAuthActivity"
+            android:label="@string/title_activity_name_auth"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.binding.BankCardActivity"
+            android:label="@string/title_activity_bank_card"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.binding.BankNameActivity"
+            android:label="@string/title_activity_bank_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.binding.OtherBankNameActivity"
+            android:label="@string/title_activity_other_bank_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.binding.ProvinceCityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.binding.PayPwdActivity"
+            android:label="@string/title_activity_pay_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 支付 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.pay.PayActivity"
+            android:label="@string/pay"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.pay.TZXYActivity"
+            android:label="@string/title_activity_tzxy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.pay.QRCodeActivity"
+            android:label="@string/title_activity_person_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.pay.PayResultActivity"
+            android:label="@string/payResult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.pay.PayMoneyActivity"
+            android:label="@string/payMoney"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.pay.WebForPayActivity"
+            android:label="@string/title_activity_web_forpay"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 套餐 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.taocan.TaoCanMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.taocan.TaoCanResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 红包雨 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.redpacket.RedPacketRainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 登录 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.login.LoginPwdActivity"
+            android:label="@string/title_activity_login_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.login.ForgotPwdActivity"
+            android:label="@string/title_activity_forgot_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.login.ForgotPwdTwoActivity"
+            android:label="@string/title_activity_forgot_pwd_two"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.login.LoginWithYanZhengMaActivity"
+            android:label="@string/title_activity_login_with_yanzhengma"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.login.LoginChooseOneActivity"
+            android:label="@string/title_activity_login_chooseone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.login.RegisterByMoibleActivity"
+            android:label="@string/title_activity_register_by_moible"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.login.RegisterSuccessActivity"
+            android:label="@string/title_activity_register_success"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.login.FindLoginPwdActivity"
+            android:label="@string/title_activity_findPwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.login.FindPwdByProblem"
+            android:label="@string/title_activity_login_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.message.MessageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.message.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 拓展 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.LotteryTypeActivity"
+            android:label="@string/title_activity_lottery_type"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.InformationDetailActivity"
+            android:label="@string/title_activity_exercise"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.find.ActivityActivity"
+            android:label="@string/title_activity_activity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 资讯 -->
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.main.MessageListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.main.MessageDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 设置 -->
+
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.MessageSendSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.MyAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.PersonSettingActivity"
+            android:label="@string/title_activity_person_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.SettingActivity"
+            android:label="@string/title_activity_safe_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.SafeSettingActivity"
+            android:label="@string/title_activity_safe_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.ChangeNameActivity"
+            android:label="@string/title_activity_change_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cshen.tiyu.activity.mian4.personcenter.setting.SafeCertificationActivity"
+            android:label="@string/title_activity_safe_certification"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 资讯包 -->
+        <activity
+            android:name="com.cshen.tiyu.zx.ZXMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cshen.tiyu.zx.main4.ZXNewsListActivtity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cshen.tiyu.zx.main4.personal.ZXSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cshen.tiyu.zx.main4.personal.ZXHistoryActivity"
+            android:screenOrientation="portrait" />
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5b76578b8f4a9d59f60000b0" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="3cebf3d56831e34343b7c1021fc4c69b" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="zhuxian" />
+
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.sj.pay.sdk.app.ui.view.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.Panel" />
+
+    </application>
+
+</manifest>

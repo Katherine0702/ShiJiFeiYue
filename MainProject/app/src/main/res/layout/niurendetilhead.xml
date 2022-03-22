@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/zhongjiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_view"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="近5期状态:"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/zhong1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/redball"
+            android:gravity="center"
+            android:text="中"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhong2line"
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:background="#D5D5D5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhong2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/greyball"
+            android:gravity="center"
+            android:text="中"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhong3line"
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:background="#D5D5D5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhong3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/redball"
+            android:gravity="center"
+            android:text="中"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhong4line"
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:background="#D5D5D5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhong4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/redball"
+            android:gravity="center"
+            android:text="中"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhong5line"
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:background="#D5D5D5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhong5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/redball"
+            android:gravity="center"
+            android:text="中"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shenglv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zhongjiang"
+        android:layout_marginBottom="10dp"
+        android:background="#DFDFDF"
+        android:orientation="vertical"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="命中率"
+                android:textColor="#828282"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DFDFDF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="盈利率"
+                android:textColor="#828282"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DFDFDF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="累计发单中奖"
+                android:textColor="#828282"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DFDFDF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mingzhonglv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="主胜"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DFDFDF" />
+
+            <TextView
+                android:id="@+id/yinglilv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="平"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DFDFDF" />
+
+            <TextView
+                android:id="@+id/tuijianzhongjiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="客胜"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

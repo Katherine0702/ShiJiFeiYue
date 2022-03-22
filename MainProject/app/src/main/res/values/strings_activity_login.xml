@@ -1,0 +1,44 @@
+<resources>
+
+	<!-- Strings related to login -->
+	<string name="prompt_username">请输入用户名/手机号</string>
+	<string name="prompt_password">请输入密码</string>
+	<string name="please_enter_mobile">请输入手机号码</string>
+	<string name="please_enter_nikename">请输入昵称</string>
+	<string name="please_enter_password">6-15位字符组成</string>
+	<string name="safe_answer">2-15位汉字/字母/数字</string>
+	<string name="safe_password_new">6-12位字母数字组合密码</string>
+	<string name="safe_password_again">请输入确认密码</string>
+	<string name="please_enter_name">4-12位字符，不能全为数字</string>
+	<string name="mobile_verificationcode">手机验证码</string>
+	<string name="nofity_mobile">大奖通知手机号码</string>
+	<string name="action_sign_in">登  录</string>
+	<string name="action_register_in">注  册</string>
+	<string name="caipiao_tiaokuan">
+		<![CDATA[
+        <font color="#a6a6a6">%1$s</font>&#160;<font color="#000000">%2$s</font>
+    ]]>
+	</string>
+	<string name="prompt_success">
+		<![CDATA[
+        <font color="#B9BABA">友情提示：为了您的账户资金安全，请及时在</font>&#160;<font color="#F56B68"><u>账户中心</u></font>&#160;<font color="#B9BABA">完善信息</font>
+    ]]>
+	</string>
+	
+    <string name="chooseone">
+       <![CDATA[
+        <font color="#808181">你的手机号</font>&#160;<font color="#F56B68"><u>***********</u></font>&#160;<font color="#808181">，已绑定多个账号，请您选择其中一个账户做为您的手机默认登录账号。后续您可直接使用手机号与密码进行登录。</font>
+    ]]></string>
+     <string name="dlt_jiangchi">
+       <![CDATA[
+        <font color="#858586">奖池滚存:</font>&#160;<font color="#858586"><u>***********</u></font>&#160;
+    ]]></string>
+    
+	<string name="action_register_soon">立即注册</string>
+	
+	<string name="shuoming">立即注册</string>
+	
+	
+	
+	
+</resources>

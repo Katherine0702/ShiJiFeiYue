@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dlt_qishu_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="#E7E7E7"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dlt_jiangchi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#efefef"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="奖池滚存：*****"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:id="@+id/dlt_qishu_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" >
+
+            <LinearLayout
+                android:id="@+id/dlt_qishu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/qishu0"
+                    layout="@layout/qishu_item" />
+
+                <include
+                    android:id="@+id/qishu1"
+                    layout="@layout/qishu_item" />
+
+                <include
+                    android:id="@+id/qishu2"
+                    layout="@layout/qishu_item" />
+
+                <include
+                    android:id="@+id/qishu3"
+                    layout="@layout/qishu_item" />
+
+                <include
+                    android:id="@+id/qishu4"
+                    layout="@layout/qishu_item" />
+
+                <include
+                    android:id="@+id/qishu5"
+                    layout="@layout/qishu_item" />
+
+                <include
+                    android:id="@+id/qishu6"
+                    layout="@layout/qishu_item" />
+
+                <include
+                    android:id="@+id/qishu7"
+                    layout="@layout/qishu_item" />
+
+                <include
+                    android:id="@+id/qishu8"
+                    layout="@layout/qishu_item" />
+
+                <include
+                    android:id="@+id/qishu9"
+                    layout="@layout/qishu_item" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dlt_qishu_down_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dlt_qishu_view"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dlt_next_qishu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#efefef"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="第2016072期   06-22  19:20截止，20:30开奖"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/dlt_down_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/dlt_down_view"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" >
+
+            <TextView
+                android:id="@+id/dlt_down_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/dlt_down_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/dlt_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

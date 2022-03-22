@@ -1,0 +1,554 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wxq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.cshen.tiyu.widget.TopViewLeft
+        android:id="@+id/tv_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        wxq:topname="用户服务条款" />
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_01"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_02"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="一、定义"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_a01"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_a02"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_a03"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_a04"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_a05"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_a06"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_a07"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="二、服务规则"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b01"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b02"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b03"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b04"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b05"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b06"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b07"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b071"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b072"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b073"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b074"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b075"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b076"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tzxy_b08"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="三、用户信息"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3.1 用户应自行诚信向“本平台”信息服务平台提供注册资料，用户保证其提供的注册资料真实、准确、完整、合法有效。用户有权随时对个人登记资料进行查询、修改。为保护用户资金安全，所有注册用户名称，身份证以及相关银行帐户账号不能更改"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3.2 因用户资料不真实、不全面、不准确造成不能兑奖、不能注销等情况，由用户承担全部责任。如果用户提供的资料包含有不正确的信息，本平台保留结束该用户使用服务资格的权利。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3.3 用户注册成功后，将产生用户名和密码等账户信息，用户可以根据“本平台”的规定更改密码。用户应谨慎合理的保存、使用其用户名和密码并对通过您的账户和密码实施的所有行为、活动及事件负全责。用户同意若发现任何非法使用用户账户或安全漏洞的情况，立即通知“本平台”。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3.4 用户不得将在“本平台”获得的账户借（租）给他人使用，否则用户应承担由此产生的全部责任，并与实际使用人承担连带责任。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="四、责任范围与责任限制"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4.1 用户个人明确同意对网络服务的使用承担风险。“本平台”对此不作任何类型的担保，不论是明确的或隐含的。包括但不限于：不担保服务一定能满足用户的需求，也不担保服务不会受中断，对服务的及时性，安全性，出错发生都不作担保；对在“本平台”以及相关产品得到的任何服务或交易进程，不作担保；对“本平台”平台服务所涉及的技术及信息的有效性、准确性、正确性、可靠性、稳定性、完整性和及时性不作出任何承诺和保证；不担保平台服务的适用性、没有错误或疏漏、持续性、准确性、可靠性或适用于某一特定用途。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4.2 用户理解并接受：“本平台”作为信息服务平台，无法控制用户每次发送的“请求出票”指令都能在相应站点得到完满实现，用户因自行谨慎判断确定相关信息的真实性、合法性和有效性，并自行承担因此产生的责任与损失。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4.3 用户了解并同意，“本平台”不对因下述情况而导致的任何损害赔偿承担责任，包括但不限于利润、名（商）誉、使用、数据等方面的损失或其他无形损失的损害赔偿："
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（1）使用或未能使用“本平台”的服务；"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（2）第三方未经批准使用用户的账户或更改用户的数据；"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（3）通过“本平台”向站点发出的“预约成功”的投注信息未能得到完满实现而导致的损失。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（4）用户对“本平台”服务的误解；"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（5）任何非因“本平台”的原因而引起的与“本平台”服务有关的其它损失。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="五、用户信息的存储和限制"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5.1 “本平台”不对用户所发布信息的删除或存储失败负责。“本平台”保留判定用户的行为是否符合“本平台”服务条款的要求和精神的权利，如果用户违背了服务条款的规定，“本平台”有权拒绝为其提供相关服务"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5.2 用户账户休眠（指连续六个月未登陆）或被注销后，“本平台”没有义务为其保留或向其披露其账户中的任何信息，也没有义务向用户或第三方转发任何用户未曾阅读或发送过的信息。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5.3 用户同意：用户在使用“本平台”服务期间存在违法行为或违反本协议和/或服务规则的，在与“本平台”的协议关系终止后，“本平台”仍可依据本协议向用户主张权利。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="六、“本平台”服务使用规范"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="6.1 在使用“本平台”服务过程中，用户承诺遵守以下约定："
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（1）在使用“本平台”的服务过程中实施的所有行为行为均应遵守国家法律、法规等规范性文件及“本平台”的各项规则的规定和要求，不违背社会公共利益或公共道德，不损害他人的合法权益，不违反本协议及相关规则。用户若违反前述承诺，产生任何法律后果的，用户应以自己的名义独立承担所有的法律责任，并确保“本平台”免于因此产生任何损失。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（2）不发布国家禁止发布的任何事项信息（除非取得合法且足够的许可），不发布涉嫌侵犯他人知识产权或其它合法权益的信息，不法务违背社会公共利益或公共道德、公序良俗的信息，不发布其它涉嫌违法或违反本协议及各类规则的信息。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（3）不对“本平台”上的任何数据作商业性利用，包括但不限于在未经“本平台”事先书面同意的情况下，以复制、传播等任何方式使用“本平台”上展示的资料。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（4）不使用任何装置、软件或例行程序干预或试图干预“本平台”的正常运作或正在“本平台”上进行的任何活动。用户不得采取任何将导致不合理的庞大数据负载加诸“本平台”网络设备的行动。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（5）不得进行危害计算机网络安全的行为，包括但不限于：使用未经许可的数据或进入未经许可的服务器账号；不得未经允许进入公众计算机网络或者他人计算机系统并删除、修改、增加存储信息；不得未经许可，企图探查、扫描、测试本平台系统或网络的弱点或其它实施破坏网络安全的行为；不得企图干涉、破坏本平台系统或网站的正常运行"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="6.2 用户了解并同意："
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（1）违反上述承诺时，“本平台”有权依据本协议的约定，做出相应处理或终止向用户提供服务，且无须征得用户的同意或提前通知用户。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（2）根据相关法令的制订或者“本平台”服务规则的判断，用户的行为涉嫌违反法律法规的规定或违反本协议和/或规则的条款的，“本平台”有权采取相应措施，包括但不限于直接屏蔽、删除侵权信息、降低信用值或直接停止提供服务。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（3）对于用户在“本平台”实施的行为，包括未在“本平台”实施但已经对“本平台”及其用户产生影响的行为，“本平台”有权单方认定该行为的性质及是否构成对本协议和/或规则的违反，并据此采取相应的必要的处理措施。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（4）对于用户涉嫌违反承诺的行为对任何第三方造成损害的，用户均应当以自己的名义独立承担所有的法律责任，并应确保“本平台”免于承担因此产生的损失或增加的费用。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="（5）如用户涉嫌违反有关法律或者本协议之规定，使“本平台”遭受任何损失，或受到任何第三方的索赔，或受到任何行政管理部门的处罚，用户应当赔偿“本平台”因此造成的损失及发生的费用，包括合理的律师费用。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="七、合同组成"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="“本平台”主页以及其他页面有关（包括但不限于）用户注册流程、变更流程、用户注册资格、方案发起流程、出票请求流程、用户服务以及用户升级等运营内容的细则以及法律声明均为本协议的有效组成部分，是对本协议的解释扩充，与本协议有着相同的法律效力"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="八、适用法律和管辖"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="8.1 本服务条款受中国现行法律、法规以及此后颁布和实施的法律、法规的约束和保护，用户和“本平台”一致同意服从其管辖。如发生“本平台”用户服务条款与中华人民共和国法律相抵触时，则这些条款将完全按法律规定重新解释，而其它条款则依旧保持对用户产生法律效力和影响。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="8.2 用户及“本平台”任一方的任何争议和质疑，均需及时告知对方，并尽可能友好协商解决；如协商不成，双方同意将纠纷或争议提交本协议签订地有管辖权的人民法院管辖。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="九、未尽事宜"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="“本平台”将不时提供其它服务，而这些其它服务可能是受不同的服务条款和条件约束的，若新服务未发布服务条款和条件时，则适用于本条款，其未尽事宜，“本平台”在法律规定的范围内有解释权。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="“本平台”在法律规定的范围内，有解释权。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="如用户对本规则有任何疑问，请登录获取相关信息，本平台将为您提供7*24小时服务。"
+                android:textColor="@color/context_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

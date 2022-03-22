@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <com.cshen.tiyu.widget.VerticalSwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/tv_head"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/mainred"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="17dp"
+                    android:src="@mipmap/back_icon" />
+
+                <TextView
+                    android:id="@+id/tv_head_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_back"
+                    android:text="竞足—"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_head_title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_head_title"
+                    android:text="混合过关"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/tv_head_title_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_head_title_item"
+                    android:src="@mipmap/main115chooseno" />
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17dp"
+                    android:src="@mipmap/shuoming" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_head">
+
+                <RelativeLayout
+                    android:id="@+id/tv_bootom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/dlt_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/clear" />
+
+                    <TextView
+                        android:id="@+id/dlt_clear_line"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/dlt_clear"
+                        android:layout_alignTop="@id/dlt_clear"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/dlt_clear"
+                        android:background="#E1E1E1" />
+
+                    <TextView
+                        android:id="@+id/dlt_sure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/dlt_sure"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="确 定"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@id/dlt_sure"
+                        android:layout_toRightOf="@id/dlt_clear_line"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/jczq_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="已选2场比赛"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="页面赔率仅供参考，请以出票赔率为准"
+                            android:textColor="#666666"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@id/tv_bootom"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:id="@+id/notice"
+                    android:layout_above="@id/line"
+                    android:layout_width="fill_parent"
+                    android:padding="8dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@mipmap/notice"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/noticechildtext"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="竞彩90分钟结果（含伤停补时，不含加时和点球）"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@id/notice"
+                    android:background="#EBEBEB" />
+
+                <ExpandableListView
+                    android:id="@+id/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@id/line1"
+                    android:background="#ffffff"
+                    android:cacheColorHint="#00000000"
+                    android:childDivider="#DFDFDF"
+                    android:dividerHeight="1dp">
+
+                </ExpandableListView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/nodataview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/tv_head"
+                android:background="@color/mainback"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:src="@mipmap/basketballnull" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="亲，当前暂无比赛哦"
+                    android:textColor="#969696"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/load"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="#000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.cshen.tiyu.widget.VerticalSwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/yindaofootball"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/yindao1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="46dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/quan1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:src="@mipmap/quan" />
+
+            <ImageView
+                android:id="@+id/jiantou1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quan1"
+                android:layout_toRightOf="@id/quan1"
+                android:src="@mipmap/jiantou" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiantou1"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="1.比赛左上角标签代表此"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text11"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="场次可直接进行单关投注"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text12"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tiaoguo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="跳过"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/next1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/corner_lightblue"
+                    android:padding="5dp"
+                    android:text="下一步"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yindao2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="124dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/quan2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:src="@mipmap/quan" />
+
+            <ImageView
+                android:id="@+id/jiantou2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quan2"
+                android:layout_toRightOf="@id/quan2"
+                android:src="@mipmap/jiantou" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiantou2"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="2.选择你预测的比赛结果"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tiaoguo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="跳过"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/next2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/corner_lightblue"
+                    android:padding="5dp"
+                    android:text="下一步"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yindao3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="124dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/quan3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:src="@mipmap/quan" />
+
+            <ImageView
+                android:id="@+id/jiantou3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quan3"
+                android:layout_toRightOf="@id/quan3"
+                android:src="@mipmap/jiantou" />
+
+            <TextView
+                android:id="@+id/text31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiantou3"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="3.数字表示让球"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text31"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="在主队实际比分上进行加减"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text32"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tiaoguo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="跳过"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/next3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/corner_lightblue"
+                    android:padding="5dp"
+                    android:text="下一步"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yindao4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="114dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/quan4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/quan" />
+
+            <ImageView
+                android:id="@+id/jiantou4"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quan4"
+                android:layout_toRightOf="@id/quan4"
+                android:src="@mipmap/jiantou" />
+
+            <TextView
+                android:id="@+id/text41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiantou4"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="4.点击展开赛事分析"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text41"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="为投注做参考"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/tiaoguo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text42"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/corner_lightblue"
+                android:padding="5dp"
+                android:text="开始投注"
+                android:textColor="@color/commonBlue"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    \
+
+    <RelativeLayout
+        android:id="@+id/yindaobasketball"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/yindao5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/quan5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="165dp"
+                android:src="@mipmap/quan" />
+
+            <ImageView
+                android:id="@+id/jiantou5"
+                android:layout_width="70dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quan5"
+                android:layout_toRightOf="@id/quan5"
+                android:src="@mipmap/jiantou" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiantou5"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="1.这里可以切换玩法"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tiaoguo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="跳过"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/next5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/corner_lightblue"
+                    android:padding="5dp"
+                    android:text="下一步"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yindao6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="124dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/quan6"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:src="@mipmap/quan" />
+
+            <ImageView
+                android:id="@+id/jiantou6"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quan6"
+                android:layout_toRightOf="@id/quan6"
+                android:src="@mipmap/jiantou" />
+
+            <TextView
+                android:id="@+id/tex61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiantou6"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="2.数字表示让球，"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/text62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tex61"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="在主队实际比分上进行加减"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text62"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tiaoguo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="跳过"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/next6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/corner_lightblue"
+                    android:padding="5dp"
+                    android:text="下一步"
+                    android:textColor="@color/commonBlue"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yindao7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/quan7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/quan" />
+
+            <ImageView
+                android:id="@+id/jiantou7"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/quan7"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@id/quan7"
+                android:background="@mipmap/jiantou2" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiantou7"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="3.这里有很多帮助"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/tiaoguo7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/corner_lightblue"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="开始投注"
+                android:textColor="@color/commonBlue"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

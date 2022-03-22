@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+              android:background="@color/transparent"
+              android:gravity="center"
+    android:layout_height="wrap_content">
+    <RelativeLayout 
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:background="@mipmap/bg_ppw_win">
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:background="@drawable/shape_ppw_redbutton"
+                android:text="关闭"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_ppw_share"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_ppw_yellowbutton"
+                android:text="分享"
+                android:textColor="@color/white" />
+        </LinearLayout>
+         <TextView  
+             android:id="@+id/tv_bonus"
+             android:padding="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@id/ll_btn"
+             android:gravity="center"     
+             android:textStyle="bold"    
+             android:textSize="18sp"    
+             android:textColor="@color/yellow"
+             android:text="中奖"/>
+         <TextView  
+             android:id="@+id/tv_scheme"
+              android:padding="5dp"
+              android:textSize="10sp"
+             android:layout_width="match_parent"
+             android:layout_marginLeft="25dp"
+             android:layout_marginRight="25dp"
+             android:layout_height="wrap_content"
+              android:gravity="center"
+               android:textStyle="bold"       
+             android:layout_above="@id/tv_bonus"
+             android:text="恭喜"/>
+        
+    </RelativeLayout>
+  
+
+</LinearLayout>

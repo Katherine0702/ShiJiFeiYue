@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wxq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" 
+        android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textColor="@color/mainred" />
+
+        <ImageView
+            android:id="@+id/iv_praise"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="3dp"
+            android:src="@mipmap/ic_praise" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ll_praise"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="--"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_expand_or_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全文"
+                android:textColor="@color/mainred"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_username"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_icon"
+            android:singleLine="true"
+            android:text="2017-01-01 00:00:00"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/gv_photo"
+            android:layout_width="65dp"
+            android:layout_height="85dp"
+            android:layout_margin="8dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_addpic" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearyLayout_dlt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/lottery_img_dlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@mipmap/defaultpic_yuan"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_dlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+
+             <TextView
+                  android:id="@+id/textview_periodNumber_dlt"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/black"
+                 android:text="第16099期"
+                 android:textSize="18sp" />
+
+             <TextView
+                 android:id="@+id/textview_time_dlt"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="12dp"
+                     android:text="2016-08-25"
+                 android:textSize="14sp" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+
+               <TextView
+                    android:id="@+id/textview_result_dlt01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/period_number_style_red"
+                    android:text="01"
+                     android:textSize="16sp"
+                     />
+
+                <TextView
+                     android:id="@+id/textview_result_dlt02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/period_number_style_red"
+                    android:text="01"
+                    android:layout_marginLeft="6dp"
+                     android:textSize="16sp"
+                     />
+
+                <TextView
+                     android:id="@+id/textview_result_dlt03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/period_number_style_red"
+                    android:layout_marginLeft="6dp"
+                     android:textSize="16sp"
+                    android:text="01"
+                     />
+
+                <TextView
+                     android:id="@+id/textview_result_dlt04"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   style="@style/period_number_style_red"
+                    android:textSize="16sp"
+                    android:text="01"
+                     />
+
+                <TextView
+                     android:id="@+id/textview_result_dlt05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    style="@style/period_number_style_red"
+                     android:textSize="16sp"
+                    android:text="01"
+                     />
+                <TextView
+                     android:id="@+id/textview_result_dlt06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                     android:textSize="16sp"
+                    style="@style/period_number_style_blue"
+                    android:text="01"
+                     />
+                <TextView
+                     android:id="@+id/textview_result_dlt07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                     android:textSize="16sp"
+                    style="@style/period_number_style_blue"
+                    android:text="01"
+                     />
+         </LinearLayout>
+        </LinearLayout>
+        <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="20dp"
+	        android:src="@mipmap/right_arrow" />
+        
+    </LinearLayout>
+
+</LinearLayout>

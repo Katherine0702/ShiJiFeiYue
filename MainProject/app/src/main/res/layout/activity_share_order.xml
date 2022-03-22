@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wxq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <com.cshen.tiyu.widget.TopViewLeft
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        wxq:topname="晒单" />
+
+    <!--
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    -->
+
+
+    <!--
+             <com.cshen.tiyu.widget.VerticalSwipeRefreshLayout
+            android:id="@+id/swipe_container_shareorder"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+    -->
+
+
+    <!--
+                 <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/iv_sd_top" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/tv_hotest"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="最热"
+                android:textColor="@color/mainred"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_newest"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="最新"
+                android:textColor="@color/dingdanuncolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/iv_bootom_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/iv_bottom_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="1"
+                android:background="@color/mainred" />
+
+            <ImageView
+                android:id="@+id/iv_bottom_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="1"
+                android:scaleType="matrix"
+                android:src="@color/mainred"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/hintcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageView 
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/find_add"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/mainred"
+                android:text="添加晒单"/>
+        </LinearLayout>
+        <View 
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/hintcolor"/>
+         <LinearLayout
+            android:id="@+id/ll_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageView 
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/find_my"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/mainred"
+                android:text="我的晒单"/>
+        </LinearLayout>
+
+     
+
+       
+    </LinearLayout>
+    <!-- </RelativeLayout> -->
+
+</LinearLayout>

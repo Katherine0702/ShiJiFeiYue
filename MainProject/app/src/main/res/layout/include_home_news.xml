@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/mainback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/iv_news_jczx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                android:id="@+id/im_news_jczx"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@mipmap/new_jczx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="竞彩资讯"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@id/im_news_jczx"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/iv_news_latestLottery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                android:id="@+id/im_news_latestLottery"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@mipmap/new_lastesloytey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@id/im_news_latestLottery"
+                android:layout_marginBottom="20dp"
+                android:text="最新开奖"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/iv_news_componyNews"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/im_news_componyNews"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@mipmap/new_company" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="公司公告"
+                android:layout_alignBottom="@id/im_news_componyNews"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.cshen.tiyu.widget.MyListView
+        android:id="@+id/lv_home_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

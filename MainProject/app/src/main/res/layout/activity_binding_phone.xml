@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:wxq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F4"
+    android:orientation="vertical"
+    tools:context="com.cshen.tiyu.activity.mian4.personcenter.setting.binding.BindingPhoneActivity" >
+
+    <com.cshen.tiyu.widget.TopViewLeft
+        android:id="@+id/tv_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        wxq:topname="绑定手机" />
+
+    <TextView
+        android:id="@+id/notice"
+        style="@style/bg_item_info"
+        android:text="绑定手机才能快速获取大奖通知" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_password"
+            style="@style/safe_item_linearlayout"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:visibility="visible" >
+
+            <TextView
+                style="@style/safe_item_text"
+                android:text="密     码"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/safe_item_edittext"
+                android:digits="@string/password_content"
+                android:hint="@string/please_enter_password"
+                android:maxLength="15"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+              android:layout_marginTop="1dp" 
+            android:id="@+id/ll_password_sure"
+            style="@style/safe_item_linearlayout"
+            android:background="#FFFFFF"
+            android:visibility="visible" >
+
+            <TextView
+                style="@style/safe_item_text"
+                android:text="确认密码"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/et_password_sure"
+                style="@style/safe_item_edittext"
+                android:digits="@string/password_content"
+                android:hint="请输入确认密码"
+                android:maxLength="15"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_marginTop="1dp" 
+            style="@style/safe_item_linearlayout"
+            android:background="#FFFFFF"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                style="@style/safe_item_text"
+                android:text="绑定号码"
+                android:textColor="#333333" />
+
+            <EditText
+                 android:id="@+id/et_monbile"
+                style="@style/safe_item_edittext"
+                android:hint="请输入手机号码"
+                android:maxLength="11"
+                android:inputType="number"
+                 android:textColor="@color/context_black" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/newphone"
+            style="@style/safe_item_linearlayout"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_mobile_new"
+                style="@style/safe_item_text"
+                android:text="绑定号码" />
+
+            <EditText
+                android:id="@+id/et_mobile_new"
+                style="@style/safe_item_edittext"
+                android:hint="请输入新手机号码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/context_black" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linl_code"
+            style="@style/safe_item_linearlayout"
+            android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/safe_item_text"
+                android:text="验证码" />
+
+            <EditText
+                android:id="@+id/codeEt"
+                style="@style/safe_item_edittext"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <Button
+                android:id="@+id/btn_verif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/selector_hidebtn"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="获取验证码"
+                android:textColor="@drawable/yzmtext"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="短信收取大约60秒如果没有收到验证码可以重新发送以最后一个验证码为准"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btn_bin"
+        style="@style/grayButton_normal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        android:text="立即绑定" />
+
+</LinearLayout>

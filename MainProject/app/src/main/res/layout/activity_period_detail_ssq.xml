@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainback"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/topleft" />
+
+    <LinearLayout
+        android:id="@+id/linearyLayout_sdel11to5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_sdel11to5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_lotteryName_sdel11to5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="双色球"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textview_periodNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:text="第09期"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textview_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="2dp"
+                    android:text="2016-08-25"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_result_dlt01"
+                    style="@style/orderdetail_number_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_result_dlt02"
+                    style="@style/orderdetail_number_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="01"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_result_dlt03"
+                    style="@style/orderdetail_number_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="01"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_result_dlt04"
+                    style="@style/orderdetail_number_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="01"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_result_dlt05"
+                    style="@style/orderdetail_number_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="01"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_result_dlt06"
+                    style="@style/orderdetail_number_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="01"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_result_dlt07"
+                    style="@style/orderdetail_number_style_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="01"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="本月销量（元）"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_sales_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/mainred"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/grer_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="奖池滚存（元）"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_pond_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/mainred"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="1dip"
+                        android:gravity="center"
+                        android:text="奖项" />
+
+                    <TextView
+                        android:layout_width="1dip"
+                        android:gravity="center"
+                        android:text="每注奖金（元）" />
+
+                    <TextView
+                        android:layout_width="1dip"
+                        android:gravity="center"
+                        android:text="中奖注数" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:text="一等奖"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_money_base01"
+                        style="@style/period_detail_textview_style"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:layout_width="1dip"
+                        android:textColor="@color/mainred" />
+
+                    <TextView
+                        android:id="@+id/tv_units_base01"
+                        style="@style/period_detail_textview_style"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:layout_width="1dip"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        style="@style/period_detail_textview_style"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:layout_width="1dip"
+                        android:text="二等奖"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_money_base02"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/mainred" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_units_base02"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="三等奖"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_money_base03"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/mainred" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_units_base03"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="四等奖"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_money_base04"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/mainred" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_units_base04"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+               
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="五等奖"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_money_base05"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/mainred" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_units_base05"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+               
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp" >
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:text="六等奖"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_money_base06"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/mainred" />
+
+                    <TextView
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:id="@+id/tv_units_base06"
+                        style="@style/period_detail_textview_style"
+                        android:layout_width="1dip"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/btn_go"
+        style="@style/redButton_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="去中奖"
+        android:textSize="16sp" />
+
+</LinearLayout>

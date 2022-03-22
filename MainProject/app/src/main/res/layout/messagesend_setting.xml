@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wxq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cshen.tiyu.activity.setting.SafeSettingActivity" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/topleft" />
+
+    <RelativeLayout
+        android:id="@+id/prize_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="中奖通知"
+            android:textColor="@color/noticetext"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:id="@+id/prize_notice_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/notice" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/followorder_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="跟单通知"
+            android:textColor="@color/noticetext"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:id="@+id/followorder_notice_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/notice" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ifprize_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开奖通知"
+            android:textColor="@color/noticetext"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:id="@+id/ifprize_notice_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/notice" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ifprize_notice_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ifprize_notice"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="50dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/football_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="竞彩足球"
+                    android:textColor="@color/noticechildtext"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/football_notice_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/notice" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/doublecolor_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#FFFFFF"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="双色球"
+                    android:textColor="@color/noticechildtext"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/doublecolor_notice_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/notice" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/happy_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#FFFFFF"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="大乐透"
+                    android:textColor="@color/noticechildtext"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/happy_notice_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/notice" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

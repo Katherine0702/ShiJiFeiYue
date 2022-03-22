@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ziyouguoguan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="自由过关"
+                    android:textColor="#333333" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp" >
+
+                    <TextView
+                        android:id="@+id/chuan11"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="单关" />
+
+                    <TextView
+                        android:id="@+id/chuan21"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="2串1" />
+
+                    <TextView
+                        android:id="@+id/chuan31"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="3串1" />
+
+                    <TextView
+                        android:id="@+id/chuan41"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="4串1" />
+
+                    <TextView
+                        android:id="@+id/chuan51"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="5串1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/chuan61"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="6串1" />
+
+                    <TextView
+                        android:id="@+id/chuan71"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="7串1" />
+
+                    <TextView
+                        android:id="@+id/chuan81"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="8串1" />
+
+                    <TextView
+                        android:id="@+id/chuan82"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="8串1"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hunheguoguan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/hunheguoguantx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="组合过关"
+                    android:textColor="#333333" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" >
+
+                    <TextView
+                        android:id="@+id/chuan33"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="3串3" />
+
+                    <TextView
+                        android:id="@+id/chuan34"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="3串4" />
+
+                    <TextView
+                        android:id="@+id/chuan44"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="4串4" />
+
+                    <TextView
+                        android:id="@+id/chuan45"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="4串5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/chuan46"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="4串6" />
+
+                    <TextView
+                        android:id="@+id/chuan411"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="4串11" />
+
+                    <TextView
+                        android:id="@+id/chuan55"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="5串5" />
+
+                    <TextView
+                        android:id="@+id/chuan56"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="5串6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/chuan510"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="5串10" />
+
+                    <TextView
+                        android:id="@+id/chuan516"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="5串16" />
+
+                    <TextView
+                        android:id="@+id/chuan520"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="5串20" />
+
+                    <TextView
+                        android:id="@+id/chuan526"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="5串26" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/chuan66"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="6串6" />
+
+                    <TextView
+                        android:id="@+id/chuan67"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="6串7" />
+
+                    <TextView
+                        android:id="@+id/chuan615"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="6串15" />
+
+                    <TextView
+                        android:id="@+id/chuan620"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="6串20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/chuan622"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="6串22" />
+
+                    <TextView
+                        android:id="@+id/chuan635"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="6串35" />
+
+                    <TextView
+                        android:id="@+id/chuan642"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="6串42" />
+
+                    <TextView
+                        android:id="@+id/chuan650"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="6串50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/chuan657"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="6串57" />
+
+                    <TextView
+                        android:id="@+id/chuan77"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="7串7" />
+
+                    <TextView
+                        android:id="@+id/chuan78"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="7串8" />
+
+                    <TextView
+                        android:id="@+id/chuan721"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="7串21" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/chuan735"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="7串35" />
+
+                    <TextView
+                        android:id="@+id/chuan7120"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="7串120" />
+
+                    <TextView
+                        android:id="@+id/chuan88"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="8串8" />
+
+                    <TextView
+                        android:id="@+id/chuan89"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="8串9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/chuan828"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="8串28" />
+
+                    <TextView
+                        android:id="@+id/chuan856"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="8串56" />
+
+                    <TextView
+                        android:id="@+id/chuan870"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="8串70" />
+
+                    <TextView
+                        android:id="@+id/chuan8247"
+                        style="@style/chuanguan_tz_back"
+                        android:layout_weight="1"
+                        android:text="8串247" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

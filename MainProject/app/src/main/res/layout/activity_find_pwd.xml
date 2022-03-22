@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wxq="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_find_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainback"
+    android:orientation="vertical">
+<com.cshen.tiyu.widget.TopViewLeft
+        android:id="@+id/tv_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        wxq:topname="找回密码" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear_old_password"
+            style="@style/safe_item_linearlayout"
+            android:background="#FFFFFF"
+            android:focusable="false"
+            android:focusableInTouchMode="false" >
+
+            <TextView
+                style="@style/safe_item_text"
+                android:text="新 密 码"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/et_new_password"
+                style="@style/safe_item_edittext"
+                android:digits="@string/password_content"
+                android:hint="@string/please_enter_password"
+                android:maxLength="15"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/safe_item_linearlayout"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" >
+
+            <TextView
+                style="@style/safe_item_text"
+                android:text="确认密码"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/et_sure_password"
+                style="@style/safe_item_edittext"
+                android:digits="@string/password_content"
+                android:hint="请输入确认密码"
+                android:maxLength="15"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newphone"
+            style="@style/safe_item_linearlayout" >
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                style="@style/safe_item_text"
+                android:text="手机号码" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                style="@style/safe_item_edittext"
+                android:hint="请输手机号码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/context_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linl_code"
+            style="@style/safe_item_linearlayout"
+            android:layout_marginTop="1dp" >
+
+            <TextView
+                style="@style/safe_item_text"
+                android:text="验证码" />
+
+            <EditText
+                android:id="@+id/codeEt"
+                style="@style/safe_item_edittext"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <TextView
+                android:id="@+id/btn_verif"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/selector_hidebtn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="获取验证码"
+                android:textColor="@drawable/yzmtext"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_sure"
+        style="@style/grayButton_normal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        android:text="确认修改" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp" >
+
+        <TextView
+            android:id="@+id/tv_unget_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="收不到验证码？"
+            android:textColor="@color/mediumblue" />
+    </RelativeLayout>
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="温馨提示：如您的账号未绑定手机号，或者有其他疑问" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="请联系客服：4009282770" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

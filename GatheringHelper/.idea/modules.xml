@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GatheringHelper.iml" filepath="$PROJECT_DIR$/GatheringHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GatheringHelper.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GatheringHelper.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multi-image-selector/GatheringHelper.multi-image-selector.iml" filepath="$PROJECT_DIR$/.idea/modules/multi-image-selector/GatheringHelper.multi-image-selector.iml" />
+    </modules>
+  </component>
+</project>

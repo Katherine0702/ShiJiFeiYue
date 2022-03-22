@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="5dp"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp" >
+
+        <TextView
+            android:id="@+id/number_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1" />
+
+        <ImageView
+            android:id="@+id/number_im"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/top1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/number" >
+
+        <ImageView
+            android:id="@+id/head_im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/defaultpic_yuan"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_im_back"
+            android:layout_alignLeft="@id/head_im_back"
+            android:layout_alignRight="@id/head_im_back"
+            android:layout_alignTop="@id/head_im_back"
+            android:background="@mipmap/defaultniu" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/defaultpic_yuan" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/head_view"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="竞彩牛人"
+                android:textColor="#454545"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/v"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/name"
+                android:src="@mipmap/v1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="命中率"
+                android:textColor="#454545"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/mingzhonglv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textColor="@color/mainred"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="盈利"
+                android:textColor="#454545"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/yinglilv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textColor="@color/mainred"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cornerfulllinefull_redline_nofull"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="有推荐"
+            android:textColor="@color/mainred"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tuijiannum"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/redball"
+            android:gravity="center"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

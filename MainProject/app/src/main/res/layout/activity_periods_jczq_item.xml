@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_period_jczq_item"
+    android:orientation="vertical" >
+
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/grer_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainback"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:textSize="16dp" />
+          <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="16dp" />
+            
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/right_arrow" />
+        </LinearLayout>
+         <View
+             android:id="@+id/view_bottom"
+             android:visibility="gone"
+	        android:layout_width="match_parent"
+	        android:layout_height="3dp"
+	        android:background="@drawable/livescores_item" />
+
+</LinearLayout>

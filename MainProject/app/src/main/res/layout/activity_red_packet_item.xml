@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical" >
+
+    <com.cshen.tiyu.widget.RefreshListView
+        android:id="@+id/rl_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ECECEC"
+        android:cacheColorHint="@null"
+        android:divider="#EFEFEF"
+        android:dividerHeight="0dip"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/nodataview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="#ECECEC"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:src="@mipmap/noredpacket" />
+
+        <TextView
+            android:id="@+id/noredpacket_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="您还没有失效的红包哦~"
+            android:textColor="#0f0f0f"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/togetredpacket"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="据说活动中心有大量红包，赶紧去领"
+            android:textColor="#969696"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

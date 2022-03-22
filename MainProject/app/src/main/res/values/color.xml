@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 蛋黄色 -->
+    <color name="white">#ffffff</color>
+    <!-- 桔黄色 -->
+    <color name="moccasin">#ffe4b5</color>
+    <!-- 主题  红色   -->
+    <color name="mainred">#FF3232</color>
+    <!-- 主题 360绿 -->
+    <color name="maingreen">#4fb07c</color>
+    <!-- 主题色 深色 -->
+    <color name="mainPressed">#12B444</color>
+    <!-- 首页黄色字体 -->
+    <color name="mainYellow">#F6AC08</color>
+    <!-- 绿色 -->
+    <color name="green">#008000</color>
+    <!-- 天蓝色 -->
+    <color name="gray">#808080</color>
+    <!-- 灰色 -->
+    <color name="grey">#808080</color>
+    <color name="blue">#0000ff</color>
+    <!-- 蓝色 -->
+    <color name="mediumblue">#0000cd</color>
+    <color name="black">#000000</color>
+    <!-- 黑色 -->
+    <color name="transparent">#0000</color>
+    <!-- 透明 -->
+    <color name="transparent2">#8000</color>
+    <!-- 透明 -->
+    <!-- 上传图片添加的颜色 -->
+    <color name="main_bg">#f4f4f4</color>
+    <color name="hint_gray">#aaaaaa</color>
+    <!-- tab菜单 -->
+    <color name="background_tab_pressed">#FFFFFF</color>
+    <color name="context_black">#EE000000</color>
+    <!-- 黑色字体 -->
+    <color name="context_grey">#E5404040</color>
+    <!-- 灰色字体 -->
+    <color name="noticetext">#505050</color>
+    <!-- 灰色字体 -->
+    <color name="noticechildtext">#7C7C7C</color>
+    <!-- 灰色字体 -->
+    <color name="tabunchoose">#989898</color>
+    <color name="mainbackdlt">#f6f6f6</color>
+    <color name="grer_divider">#aeaeae</color>
+    <color name="paykey">#A0A0A0</color>
+    <color name="mainback">#f6f6f6</color>
+    <!-- 蛋黄色 -->
+    <color name="jczq_table_back">#eeeeee</color>
+    <!-- 蛋黄色 -->
+    <color name="hintcolor">#CDCDCD</color>
+    <!-- 蛋黄色 -->
+    <color name="keycolor">#333333</color>
+    <!-- 蛋黄色
+    <color name="dingdancolor">#4fb07c</color> -->
+    <!-- 蛋黄色 -->
+    <color name="dingdanuncolor">#424242</color>
+    <!-- 蛋黄色 -->
+    <color name="dingdanallcolor">#3389F1</color>
+    <!-- 蛋黄色 -->
+    <color name="dingdanalluncolor">#666666</color>
+    <color name="commonBlue">#3c9ef0</color>
+    <color name="fast3Status">#302C2D</color>
+    <color name="yellow">#EFB31D</color>
+
+</resources>

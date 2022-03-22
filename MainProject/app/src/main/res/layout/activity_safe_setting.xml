@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wxq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainback"
+    android:orientation="vertical"
+    tools:context="com.cshen.tiyu.activity.setting.SafeSettingActivity" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/topleft" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="账户安全设置"
+                android:textSize="13dp" />
+
+            <com.cshen.tiyu.widget.SafeSettingItemView
+                android:id="@+id/sv_binding_phone"
+                wxq:name="手机号码"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/head"
+                wxq:value="可修改" >
+            </com.cshen.tiyu.widget.SafeSettingItemView>
+
+            <com.cshen.tiyu.widget.SafeSettingItemView
+                android:id="@+id/sv_name_auth"
+                wxq:name="实名认证"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/head"
+                android:layout_marginTop="1dp"
+                wxq:value="未认证" >
+            </com.cshen.tiyu.widget.SafeSettingItemView>
+
+            <com.cshen.tiyu.widget.SafeSettingItemView
+                android:id="@+id/sv_bank_card"
+                wxq:name="提款银行卡"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/head"
+                android:layout_marginTop="1dp"
+                wxq:value="未设置" >
+            </com.cshen.tiyu.widget.SafeSettingItemView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="密码管理"
+                android:textSize="13dp" />
+
+            <com.cshen.tiyu.widget.SafeSettingItemView
+                android:id="@+id/sv_pay_pwd"
+                wxq:name="支付密码"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/head"
+                android:layout_marginTop="1dp"
+                wxq:value="未设置" >
+            </com.cshen.tiyu.widget.SafeSettingItemView>
+
+            <com.cshen.tiyu.widget.SafeSettingItemView
+                android:id="@+id/sv_loginPwd"
+                wxq:name="登录密码"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/head"
+                android:layout_marginTop="1dp"
+                wxq:value="可修改" >
+            </com.cshen.tiyu.widget.SafeSettingItemView>
+             <com.cshen.tiyu.widget.SafeSettingItemView
+                android:id="@+id/sv_safeCertification"
+                wxq:name="安全问题认证"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/head"
+                android:layout_marginTop="1dp"
+                wxq:value="未设置" >
+            </com.cshen.tiyu.widget.SafeSettingItemView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F4"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="活动列表"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#D9D9D9" />
+
+    <include layout="@layout/bottom" />
+
+
+</LinearLayout>
